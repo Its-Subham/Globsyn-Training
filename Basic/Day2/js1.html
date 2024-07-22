@@ -1,0 +1,93 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // alert("Hello World");
+        
+            // alert("Welcome to javascript");
+            
+
+            function add(){
+                let val1=Number(document.getElementById("textmsg1").value);
+                let val2=Number(document.getElementById("textmsg2").value);
+                let val3=val1+val2;
+                alert(val3);
+            }
+            function sub(){
+                let val1=Number(document.getElementById("textmsg1").value);
+                let val2=Number(document.getElementById("textmsg2").value);
+                let val3=val1-val2;
+                alert(val3);
+            }
+            function mul(){
+                let val1=Number(document.getElementById("textmsg1").value);
+                let val2=Number(document.getElementById("textmsg2").value);
+                let val3=val1*val2;
+                alert(val3);
+            }
+            function div(){
+                let val1=Number(document.getElementById("textmsg1").value);
+                let val2=Number(document.getElementById("textmsg2").value);
+                let val3=val1/val2;
+                alert(val3);
+            }
+        
+    </script>
+</head>
+<body>
+    <input type="textbox" id="textmsg1" value="">
+    <input type="textbox" id="textmsg2" value="">
+    
+    <input type="button" value="+" onclick="add()">
+    <input type="button" value="-" onclick="sub()">
+    <input type="button" value="*" onclick="mul()">
+    <input type="button" value="/" onclick="div()">
+    
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function vote_validation() {
+            let age = Number(document.getElementById("txtage").value);
+            let gender=document.getElementById("gender").value
+            if (age >= 60 && gender=="male") {
+                alert("Eligible for online vote");
+            }
+            else if (age >= 65 && gender=="female") {
+                alert("Eligible for Online vote");
+            }
+            else if(age >= 18 && gender=="male") {
+                alert("Eligible for vote");
+            }
+            else if(age >= 21 && gender=="female") {
+                alert("Eligible for vote");
+            }
+            else{
+                alert("Grow Up");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p>
+        Enter your Gender:
+        <input type="textbox" id="gender" value="">
+        Enter the age:
+        <input type="textbox" id="txtage" value="">
+    </p>
+    <input type="button" value="Submit" onclick="vote_validation()">
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+#login-box{
+    border: 2px solid red;
+    border-radius: 1rem;
+    width:50%;
+    margin:0 auto;
+}
+
+div form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    margin: 1rem;
+}
+
